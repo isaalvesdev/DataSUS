@@ -47,13 +47,13 @@ O estimador não - paramétrico de Kaplan - Meier tem como objetivo de estimar a
 $\hat{S}(t) = \prod_{i:t_i \leq t} \left(1 - \frac{d_i}{n_i}\right)$ 
 em que,
 
-</br>
 
-+ $\ t_1 < t_2 < ... <t_k$, os k tempos distintos e ordenados de falha.
+$\ t_1 < t_2 < ... <t_k$, os k tempos distintos e ordenados de falha.
 
-+ $\ d_i$ : número de falhas em $\ t_i, i = 1,...,k$.
+$\ d_i$ : número de falhas em $\ t_i, i = 1,...,k$.
 
-+ $\ n_i$ : número de indivíduos sob risco em $\ t_i$, ou seja, os indivíduos que não falharam e não foram censurados até o instante imediatamente anterior a $\ t_i$.
+$\ n_i$ : número de indivíduos sob risco em $\ t_i$, ou seja, os indivíduos que não falharam e não foram censurados até o instante imediatamente anterior a $\ t_i$.
+
 
 </br>
 
@@ -71,13 +71,13 @@ $\hat{t_m} = t_1 + \sum_{j = 1}^{k-1} \hat {S}(t_j)(t_{j+1} - t_j) = 20,27$ dias
 Para o tempo mediano, 50% dos pacientes ficam 20 dias internados.
 </br> 
 
-* ### Modelagem Probabilística em Análise de Sobrevivência.
+### Modelagem Probabilística em Análise de Sobrevivência.
 
-  O objetivo dos modelos probabilísticos é estimar o tempo de duração ou tempo até que um evento de falha ocorra. Os modelos que serão aplicados nos dados serão:
+O objetivo dos modelos probabilísticos é estimar o tempo de duração ou tempo até que um evento de falha ocorra. Os modelos que serão aplicados nos dados serão:
 
-  1. Exponêncial: $\ S(t) = e^{-(\frac{t}{\lambda})} $.
-  2. Weibull: $\ S(t) =  e^{-(\frac{t}{\alpha})^{\gamma}} $.
-  3. Log - Normal: $\ S(t) = \Phi( \frac{-log(t) + \mu}{\sigma})$.
+1. Exponêncial: $\ S(t) = e^{-(\frac{t}{\lambda})} $.
+2. Weibull: $\ S(t) =  e^{-(\frac{t}{\alpha})^{\gamma}} $.
+3. Log - Normal: $\ S(t) = \Phi( \frac{-log(t) + \mu}{\sigma})$.
 
 </br>
 
@@ -97,12 +97,12 @@ A fim de determinar se os dados se ajustam a essas distribuições mencionadas, 
 </br>
 
 2.O próximo passo é construir Gráfcos das sobreviv^encias estimadas por Kaplan-Meier versus as sobrevivências estimadas pelos modelos ajustados. Se a curva estiver próxima da reta $\ y = x$, podemos dizer que modelo também é um forte candidato para estar ajustado aos dados. Isso indica que o modelo está capturando bem o comportamento de sobrevivência observado nos dados.
-![Metodo1](/Metodo1.png) 
+![Metodo1](Metodo1.png) 
 
 </br>
 
 3.No terceiro passo, devemos construir o gráfico linearizados para os modelos exponencial, Weibull e Log-Normal. Assim, devemos olhar novamente se a curva está próxima da reta $\ y = x$.
-![Metodo2](/Metodo2.png)
+![Metodo2](Metodo2.png)
 
 Por último, foi calculado o log da verossimilhança para os três modelos:
   | Exponência| Weibull| Log - Normal|
