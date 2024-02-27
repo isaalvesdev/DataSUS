@@ -44,7 +44,8 @@ Com base na análise exploratória de dados realizada, podemos aplicar os concei
 O estimador não - paramétrico de Kaplan - Meier tem como objetivo de estimar a função de sobrevivência.
 </br>
 
-$\hat{S}(t) = \prod_{i:t_i \leq t} \left(1 - \frac{d_i}{n_i}\right) $ em que,
+$\hat{S}(t) = \prod_{i:t_i \leq t} \left(1 - \frac{d_i}{n_i}\right)$ 
+em que,
 
 </br>
 
@@ -96,12 +97,12 @@ A fim de determinar se os dados se ajustam a essas distribuições mencionadas, 
 </br>
 
 2.O próximo passo é construir Gráfcos das sobreviv^encias estimadas por Kaplan-Meier versus as sobrevivências estimadas pelos modelos ajustados. Se a curva estiver próxima da reta $\ y = x$, podemos dizer que modelo também é um forte candidato para estar ajustado aos dados. Isso indica que o modelo está capturando bem o comportamento de sobrevivência observado nos dados.
-![Metodo1](Metodo1.png) 
+![Metodo1](/Metodo1.png) 
 
 </br>
 
 3.No terceiro passo, devemos construir o gráfico linearizados para os modelos exponencial, Weibull e Log-Normal. Assim, devemos olhar novamente se a curva está próxima da reta $\ y = x$.
-![Metodo2](Metodo2.png)
+![Metodo2](/Metodo2.png)
 
 Por último, foi calculado o log da verossimilhança para os três modelos:
   | Exponência| Weibull| Log - Normal|
